@@ -2,31 +2,31 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/home_controller.dart';
+import '../controllers/sign_up_controller.dart';
 
-class HomeView extends GetView<HomeController> {
+class SignUpView extends GetView<SignUpController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HomeView'),
+        title: Text('SignUpView'),
         centerTitle: true,
       ),
-      body: Center(
+      body:Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
               'HomeView is working',
               style: TextStyle(fontSize: 20),
             ),
             ElevatedButton(
-              child: Text('Go to SignUp Screen'),
-              onPressed: (){Get.toNamed('/sign-up');},
+              child: Text('Go to Login Screen'),
+              onPressed: (){Get.toNamed('/login');},
             ),
           ],
         ),
-
       ),
     );
   }

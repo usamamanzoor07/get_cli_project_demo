@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 
-import '../controllers/home_controller.dart';
+import '../controllers/login_controller.dart';
 
-class HomeView extends GetView<HomeController> {
+class LoginView extends GetView<LoginController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HomeView'),
+        title: Text('LoginView'),
         centerTitle: true,
       ),
       body: Center(
@@ -21,12 +21,11 @@ class HomeView extends GetView<HomeController> {
               style: TextStyle(fontSize: 20),
             ),
             ElevatedButton(
-              child: Text('Go to SignUp Screen'),
-              onPressed: (){Get.toNamed('/sign-up');},
+              child: Text('Go to Home Screen'),
+              onPressed: (){Get.toNamed('/home');},
             ),
           ],
         ),
-
       ),
     );
   }
